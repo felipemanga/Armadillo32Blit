@@ -3,6 +3,192 @@
 # References can be picked up by including assets.hpp
 
 assets.cpp:
-  assets/no-image.png:
-    name: asset_no_image
-
+  data/mission_1.i16:
+    name: mission_1
+    type: raw/binary
+  data/mission_2.i16:
+    name: mission_2
+    type: raw/binary
+  data/mission_3.i16:
+    name: mission_3
+    type: raw/binary
+  data/mission_4.i16:
+    name: mission_4
+    type: raw/binary
+  data/mission_5.i16:
+    name: mission_5
+    type: raw/binary
+  data/mission_6.i16:
+    name: mission_6
+    type: raw/binary
+  data/mission_7.i16:
+    name: mission_7
+    type: raw/binary
+  data/p0.i8:
+    name: p0
+    type: raw/binary
+  data/p10.i8:
+    name: p10
+    type: raw/binary
+  data/p11.i8:
+    name: p11
+    type: raw/binary
+  data/p12.i8:
+    name: p12
+    type: raw/binary
+  data/p13.i8:
+    name: p13
+    type: raw/binary
+  data/p14.i8:
+    name: p14
+    type: raw/binary
+  data/p15.i8:
+    name: p15
+    type: raw/binary
+  data/p16.i8:
+    name: p16
+    type: raw/binary
+  data/p17.i8:
+    name: p17
+    type: raw/binary
+  data/p18.i8:
+    name: p18
+    type: raw/binary
+  data/p19.i8:
+    name: p19
+    type: raw/binary
+  data/p1.i8:
+    name: p1
+    type: raw/binary
+  data/p20.i8:
+    name: p20
+    type: raw/binary
+  data/p21.i8:
+    name: p21
+    type: raw/binary
+  data/p22.i8:
+    name: p22
+    type: raw/binary
+  data/p23.i8:
+    name: p23
+    type: raw/binary
+  data/p24.i8:
+    name: p24
+    type: raw/binary
+  data/p25.i8:
+    name: p25
+    type: raw/binary
+  data/p26.i8:
+    name: p26
+    type: raw/binary
+  data/p27.i8:
+    name: p27
+    type: raw/binary
+  data/p28.i8:
+    name: p28
+    type: raw/binary
+  data/p29.i8:
+    name: p29
+    type: raw/binary
+  data/p2.i8:
+    name: p2
+    type: raw/binary
+  data/p30.i8:
+    name: p30
+    type: raw/binary
+  data/p31.i8:
+    name: p31
+    type: raw/binary
+  data/p32.i8:
+    name: p32
+    type: raw/binary
+  data/p33.i8:
+    name: p33
+    type: raw/binary
+  data/p34.i8:
+    name: p34
+    type: raw/binary
+  data/p35.i8:
+    name: p35
+    type: raw/binary
+  data/p36.i8:
+    name: p36
+    type: raw/binary
+  data/p37.i8:
+    name: p37
+    type: raw/binary
+  data/p38.i8:
+    name: p38
+    type: raw/binary
+  data/p39.i8:
+    name: p39
+    type: raw/binary
+  data/p3.i8:
+    name: p3
+    type: raw/binary
+  data/p40.i8:
+    name: p40
+    type: raw/binary
+  data/p41.i8:
+    name: p41
+    type: raw/binary
+  data/p42.i8:
+    name: p42
+    type: raw/binary
+  data/p43.i8:
+    name: p43
+    type: raw/binary
+  data/p44.i8:
+    name: p44
+    type: raw/binary
+  data/p45.i8:
+    name: p45
+    type: raw/binary
+  data/p46.i8:
+    name: p46
+    type: raw/binary
+  data/p47.i8:
+    name: p47
+    type: raw/binary
+  data/p48.i8:
+    name: p48
+    type: raw/binary
+  data/p49.i8:
+    name: p49
+    type: raw/binary
+  data/p4.i8:
+    name: p4
+    type: raw/binary
+  data/p50.i8:
+    name: p50
+    type: raw/binary
+  data/p51.i8:
+    name: p51
+    type: raw/binary
+  data/p52.i8:
+    name: p52
+    type: raw/binary
+  data/p53.i8:
+    name: p53
+    type: raw/binary
+  data/p54.i8:
+    name: p54
+    type: raw/binary
+  data/p55.i8:
+    name: p55
+    type: raw/binary
+  data/p5.i8:
+    name: p5
+    type: raw/binary
+  data/p6.i8:
+    name: p6
+    type: raw/binary
+  data/p7.i8:
+    name: p7
+    type: raw/binary
+  data/p8.i8:
+    name: p8
+    type: raw/binary
+  data/p9.i8:
+    name: p9
+    type: raw/binary

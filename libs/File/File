@@ -1,0 +1,17 @@
+#pragma once
+
+#if defined(POKITTO) || defined(POK_SIM)
+#include "Pokitto_settings.h"
+#endif
+
+#if defined(TARGET_32BLIT_HW)
+#include "./BlitFile.h"
+#elif !defined(POKITTO) && !defined(PROJ_YAPFS_STREAMING)
+#include "./SIMFile.h"
+#elif defined(PROJ_SDFS_STREAMING)
+#include "./SDFSFile.h"
+#elif defined(NO_SD_CARD)
+#include "./NOPFile.h"
+#else
+#include "./YAPFSFile.h"
+#endif

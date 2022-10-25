@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.9)
 project(armadillo)
 
 # Add your sources here (adding headers is optional, but helps some CMake generators)
-set(PROJECT_SOURCE game.cpp game.hpp)
+set(PROJECT_SOURCE src/main.cpp blit/blit.cpp)
 
 # ... and any other files you want in the release here
 set(PROJECT_DISTRIBS LICENSE README.md)
@@ -18,6 +18,23 @@ else()
 endif()
 
 find_package (32BLIT CONFIG REQUIRED PATHS ../32blit-sdk $ENV{PATH_32BLIT_SDK})
+
+add_compile_options(
+  "-I../include"
+  "-I../include/layers"
+  "-I../include/fonts"
+  "-I../libs/LibLog"
+  "-I../libs/LibSchedule"
+  "-I../libs/MemOps"
+  "-I../libs/File"
+  "-I../libs/LibAudio")
+
+add_compile_definitions(
+  "SCREEN_WIDTH=320"
+  "SCREEN_HEIGHT=240"
+  "SCREEN_565"
+  "SCREEN_BGR"
+  "USE_SCANLINE_RENDERER")
 
 blit_executable (${PROJECT_NAME} ${PROJECT_SOURCE})
 blit_assets_yaml (${PROJECT_NAME} assets.yml)

@@ -1,0 +1,34 @@
+#pragma once
+
+#include <types.hpp>
+
+namespace sync {
+    class Entity;
+    using UpdateStrategy = void (*)(void* value, const void* newValue, std::size_t);
+}
+
+#if defined(TARGET_SDL1) || defined(TARGET_SDL2)
+#include "SDLSync.h"
+#endif
+
+namespace sync {
+    class Entity {
+    public:
+        class Prop {
+        public:
+            Entity& entity;
+            const uptr id;
+            UpdateStrategy strategy = MemOps::copy;
+
+            template<typename Type>
+            Prop& operator = (Type& prop) {
+                Backend::instance().track(entity, id, &prop, sizeof(Type), strategy);
+                return *this;
+            }
+        };
+
+        Prop operator [] (const StringInfo& info) {
+            return {*this, info};
+        }
+    };
+}
