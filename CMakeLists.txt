@@ -20,14 +20,14 @@ endif()
 find_package (32BLIT CONFIG REQUIRED PATHS ../32blit-sdk $ENV{PATH_32BLIT_SDK})
 
 add_compile_options(
-  "-I../include"
-  "-I../include/layers"
-  "-I../include/fonts"
-  "-I../libs/LibLog"
-  "-I../libs/LibSchedule"
-  "-I../libs/MemOps"
-  "-I../libs/File"
-  "-I../libs/LibAudio")
+  "-I${CMAKE_CURRENT_LIST_DIR}/include"
+  "-I${CMAKE_CURRENT_LIST_DIR}/include/layers"
+  "-I${CMAKE_CURRENT_LIST_DIR}/include/fonts"
+  "-I${CMAKE_CURRENT_LIST_DIR}/libs/LibLog"
+  "-I${CMAKE_CURRENT_LIST_DIR}/libs/LibSchedule"
+  "-I${CMAKE_CURRENT_LIST_DIR}/libs/MemOps"
+  "-I${CMAKE_CURRENT_LIST_DIR}/libs/File"
+  "-I${CMAKE_CURRENT_LIST_DIR}/libs/LibAudio")
 
 add_compile_definitions(
   "SCREEN_WIDTH=320"
